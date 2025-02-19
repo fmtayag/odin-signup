@@ -1,6 +1,7 @@
 :root {
     --form-padding: 2rem;
     --border-color: #E5E7EB;
+    --button-color: #596D48;
 }
 
 @font-face {
@@ -123,4 +124,21 @@ body {
         padding: var(--form-padding);
     }
   }
+}
+
+button[type="submit"] {
+    border: 0;
+    border-radius: 8px;
+    width: 200px;
+    background-color: var(--button-color);
+    color: white;
+    padding: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 2em;
+
+    & +p>a:link {
+        color: var(--button-color);
+        text-decoration: none;
+        font-weight: bold;
+    }
 }
