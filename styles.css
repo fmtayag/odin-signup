@@ -10,7 +10,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 
 .logo-text {
@@ -57,7 +57,7 @@ body {
     position: absolute; 
     bottom: 5%;
     width: 100%;
-    
+
     text-align: center;
     color: white;
 
