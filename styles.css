@@ -1,6 +1,6 @@
 :root {
     --form-padding: 2rem;
-    --border-color: #ccc;
+    --border-color: #E5E7EB;
 }
 
 @font-face {
@@ -124,5 +124,3 @@ body {
     }
   }
 }
-
-
