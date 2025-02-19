@@ -130,10 +130,14 @@ button[type="submit"] {
     border: 0;
     border-radius: 8px;
     width: 200px;
+
+    font-weight: bold;
+
     background-color: var(--button-color);
     color: white;
+    box-shadow: 0 0 5px -2px #222;
+
     padding: 0.8rem;
-    font-weight: bold;
     margin-bottom: 2em;
 
     & +p>a:link {
