@@ -2,6 +2,8 @@
   --form-padding: 2rem;
   --border-color: #e5e7eb;
   --button-color: #596d48;
+  --focused-color: dodgerblue;
+  --invalid-color: salmon;
 }
 
 @font-face {
@@ -118,19 +120,27 @@ body {
       gap: 4rem;
     }
 
-    & #textfields input {
-      display: block;
-      width: 200px;
-      height: 1.4rem;
-      margin-bottom: 1rem;
-      border: 1px solid var(--border-color);
-      border-radius: 3px;
-    }
-
     & form > div:nth-child(2) {
       padding: var(--form-padding);
     }
   }
+}
+
+input {
+  display: block;
+  width: 200px;
+  height: 1.4rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  outline: none;
+}
+input:focus {
+  border: 1px solid var(--focused-color);
+  box-shadow: 0 0 3px -1px #222;
+}
+input:user-invalid  {
+    border: 1px solid var(--invalid-color);
 }
 
 button[type='submit'] {
